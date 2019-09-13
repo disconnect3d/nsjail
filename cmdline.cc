@@ -125,7 +125,7 @@ struct custom_option custom_opts[] = {
     { { "gid_mapping", required_argument, NULL, 'G' }, "Add a custom gid mapping of the form inside_gid:outside_gid:count. Setting this requires newgidmap (set-uid) to be present" },
     { { "bindmount_ro", required_argument, NULL, 'R' }, "List of mountpoints to be mounted --bind (ro) inside the container. Can be specified multiple times. Supports 'source' syntax, or 'source:dest'" },
     { { "bindmount", required_argument, NULL, 'B' }, "List of mountpoints to be mounted --bind (rw) inside the container. Can be specified multiple times. Supports 'source' syntax, or 'source:dest'" },
-    { { "tmpfsmount", required_argument, NULL, 'T' }, "List of mountpoints to be mounted as tmpfs (R/W) inside the container. Can be specified multiple times. Supports 'dest' syntax. Alternatively, use '-m none:dest:tmpfs:size=8388608'" },
+    { { "tmpfsmount", required_argument, NULL, 'T' }, "List of mountpoints to be mounted as tmpfs (R/W) inside the container. Can be specified multiple times. Supports 'dest' syntax (e.g. '/tmp'). Alternatively, use '-m none:dest:tmpfs:size=8388608'" },
     { { "mount", required_argument, NULL, 'm' }, "Arbitrary mount, format src:dst:fs_type:options" },
     { { "symlink", required_argument, NULL, 's' }, "Symlink, format src:dst" },
     { { "disable_proc", no_argument, NULL, 0x0603 }, "Disable mounting procfs in the jail" },
